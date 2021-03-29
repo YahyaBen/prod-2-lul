@@ -1,0 +1,31 @@
+.notifContainer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(143, 143, 143, 0.7);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  visibility: visible;
+  height: 100vh;
+  z-index: 10 !important;
+}
+
+.notifHeader {
+  margin: 170px auto;
+  padding: 110px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.notifHeader p {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

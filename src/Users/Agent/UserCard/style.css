@@ -1,0 +1,30 @@
+.button {
+  height: 30px;
+  width: 130px;
+  background-color: #313344;
+  color: white;
+  margin: 8px 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.userCardContainer {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.userCardContainer:hover {
+  -webkit-box-shadow: 0 8px 16px 0 #00000048;
+          box-shadow: 0 8px 16px 0 #00000048;
+}
+
+.field p {
+  text-align: left;
+}
+/*# sourceMappingURL=style.css.map */
