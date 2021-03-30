@@ -5,6 +5,7 @@ import AttenteListe from "./Agent/AttenteListe/AttenteListe";
 import PauseListe from "./Agent/PauseListe/PauseListe";
 import UserCard from "./Agent/UserCard/UserCard";
 import Notifs from "../Notif/Notifs";
+import "./style/styleUsers.css";
 
 const Users = (A) => {
   const [data, setdata] = useState(0);
@@ -30,7 +31,7 @@ const Users = (A) => {
     refrech(A.match.params.ID);
     var timer = setInterval(() => {
       refrech(A.match.params.ID);
-    }, 5000);
+    }, 500000);
 
     return async () => {
       clearInterval(timer);
@@ -43,8 +44,8 @@ const Users = (A) => {
         {data !== 0 ? (
           <>
             <UserCard className="itemsUser" user={data} refrech={refrech} />
-            <AttenteListe className="" user={data} refrech={refrech} />
-            <PauseListe className="" user={data} refrech={refrech} />
+            <AttenteListe className="itemsUser" user={data} refrech={refrech} />
+            <PauseListe className="itemsUser" user={data} refrech={refrech} />
 
             {/* Notif comp */}
 
@@ -66,7 +67,7 @@ const Users = (A) => {
       <div className="userCatchContainer">
         Refresh please wait...{refrech(A.match.params.ID)}
       </div>
-    ); // before was Refresh.... !
+    ); 
   }
 };
 

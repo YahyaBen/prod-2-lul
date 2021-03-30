@@ -6,7 +6,7 @@ const UserCard = ({ user, refrech }) => {
   const [data, setdata] = useState(user);
 
   //////////Gestion affichage button//////////////
-  ////////////////////////////////////////////////
+
   const [btnDemande, setbtnDemande] = useState(
     data.pauses.filter((e) => e.userID === data.user.id).length
   );
@@ -14,8 +14,7 @@ const UserCard = ({ user, refrech }) => {
   const [btnFinish, setbtnFinish] = useState(
     data.pauses.filter((e) => e.userID === data.user.id && e.etat === 1).length
   );
-  ////////////////////////////////////
-  ///////////////////////////////////
+
   const demandePause = () => {
     // create pause
     // ranking
@@ -44,42 +43,34 @@ const UserCard = ({ user, refrech }) => {
     <>
       <div className="userCardContainer">
         <div className="field">
-          <p>
-            Pseudo : <span>{data.user.Pseudo}</span>
-          </p>
+          Pseudo <br /> <span>{data.user.Pseudo}</span>
         </div>
         <div className="field">
-          <p>
-            Groupe : <span>{data.group.label}</span>
-          </p>
+          Groupe <br/> <span>{data.group.label}</span>
         </div>
         <div className="field">
-          <p>
-            Max : <span>{data.group.max}</span>
-          </p>
+          Max <br /> <span>{data.group.max}</span>
         </div>
         <div className="field">
-          <p>
-            Etat de pause :{" "}
-            <span>{data.group.isOpen ? "ouvert" : "ferme"}</span>
-          </p>
+          Etat de pause <br />
+          <span>{data.group.isOpen ? " ouvert " : " ferme "}</span>
         </div>
-      </div>
-      <div>
-        {btnDemande === 0 ? (
-          <button className="demanderPause" onClick={demandePause}>
-            Demander la pause
-          </button>
-        ) : (
-          ""
-        )}
-        {btnFinish === 1 ? (
-          <button className="arreterPause" onClick={arreterPause}>
-            Arreter la pause
-          </button>
-        ) : (
-          ""
-        )}
+        <div className="field">
+          {btnDemande === 0 ? (
+            <button className="demanderPause" onClick={demandePause}>
+              Demander la pause
+            </button>
+          ) : (
+            ""
+          )}
+          {btnFinish === 1 ? (
+            <button className="arreterPause" onClick={arreterPause}>
+              Arreter la pause
+            </button>
+          ) : (
+            ""
+          )}
+        </div>
       </div>
     </>
   );
