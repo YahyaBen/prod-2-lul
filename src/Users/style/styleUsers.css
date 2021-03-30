@@ -6,15 +6,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: left;
-      align-content: left;
+  overflow-y: scroll;
+}
+
+.userContainer::-webkit-scrollbar {
+  display: none;
 }
 /*# sourceMappingURL=styleUsers.css.map */
