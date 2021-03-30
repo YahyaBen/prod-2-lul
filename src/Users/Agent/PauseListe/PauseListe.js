@@ -53,24 +53,45 @@ const PauseListe = ({ user, refrech }) => {
           {
             title: "Ranking",
             field: "ranking",
+            cellStyle: {
+              backgroundColor: "#e6e6ff",
+              textAlign: "center",
+            },
           },
           {
             title: "Pseudo",
             field: "pseudo",
+            cellStyle: {
+              textAlign: "center",
+            },
           },
           {
             title: "Chrono",
             field: "Chrono", // a definir
+            cellStyle: {
+              textAlign: "center",
+            },
           },
         ]}
+        style={{
+          width: "750px",
+          tableLayout: "fixed",
+          marginLeft: "auto",
+          marginRight: "auto",
+          marginBottom: "50px",
+          borderRadius: "20px",
+        }}
         options={{
           headerStyle: {
-            backgroundColor: "#696a6e",
-            color: "#FFF",
-            fontSize: "17px",
+            backgroundColor: "#154c79",
+            color: "#ffffff",
             textAlign: "center",
             fontWeight: "bold",
+            width: "22px",
+            position: "sticky",
           },
+          maxBodyHeight: "250px",
+          minBodyHeight: "250px",
           rowStyle: (rowData) => {
             if (rowData.etat === 1) {
               if (rowData.diff >= 900) {
@@ -78,10 +99,6 @@ const PauseListe = ({ user, refrech }) => {
               }
               return { backgroundColor: "#C1E7C3" };
             }
-
-            /////
-
-            ///////
             return { backgroundColor: "#DAE9ED" };
           },
 

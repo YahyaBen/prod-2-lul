@@ -3,7 +3,7 @@ import { resetP, updateMax, updateEtat } from "../../../tools/axios";
 import "./style.css";
 
 export const AdminCard = ({ data, users, refrech }) => {
-  const [maxi, setMaxi] = useState(data.group.max);
+  const [maxi, setMaxi] = useState(users.group.max);
 
   const Reset = () => {
     resetP(data.user.groupID).then((e) => {

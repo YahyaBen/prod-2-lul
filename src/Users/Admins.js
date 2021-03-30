@@ -48,7 +48,7 @@ const Admins = (A) => {
             {data !== 0 && Users !== 0 ? (
               <>
                 {Users.data.data.map((e) => (
-                  <div className="groupContainer" key={e.group.id}>
+                  <div className="groupContainer" key={e.group.label}>
                     <AdminCard users={e} data={data} refrech={refrech} />
                     <AttenteListe user={e.dataGroups} />
                     <PauseListe user={e.dataGroups} />

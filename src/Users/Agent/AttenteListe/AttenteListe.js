@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import MaterialTable from "material-table";
-import './style/style.css'
+
+
 const AttenteListe = ({ user, refrech }) => {
   const [dataUser, setdataUser] = useState(user);
 
@@ -19,31 +20,43 @@ const AttenteListe = ({ user, refrech }) => {
           {
             title: "Ranking",
             field: "ranking",
+            cellStyle: {
+              backgroundColor: "#e6e6ff",
+              textAlign: "center",
+            },
           },
           {
             title: "Pseudo",
             field: "pseudo",
-            width: "150px",
+            cellStyle: {
+              textAlign: "center",
+            },
           },
         ]}
+        style={{
+          width: "750px",
+          tableLayout: "fixed",
+          marginLeft: "auto",
+          marginRight: "auto",
+        }}
         options={{
           headerStyle: {
-            backgroundColor: "#696a6e",
-            color: "#FFF",
-            fontSize: "17px",
+            backgroundColor: "#154c79",
+            color: "#ffffff",
             textAlign: "center",
             fontWeight: "bold",
+            position: "sticky",
           },
+          maxBodyHeight: "250px",
+          minBodyHeight: "250px",
           rowStyle: (rowData) => {
             // console.log(rowData)
-             if (rowData.notif === 1) {
-              return { backgroundColor: "#ff0000" 
-            };
-             } else 
-            if (rowData.awaiting === 1) {
-              return { backgroundColor: "#E4E5B4" };
+            if (rowData.notif === 1) {
+              return { color: "#ff0000" };
+            } else if (rowData.awaiting === 1) {
+              return { color: "#DAA520" };
             }
-            return { backgroundColor: "#DAE9ED" };
+            return { color: "#006400" };
           },
           search: false,
           paging: false,
