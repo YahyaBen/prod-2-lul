@@ -24,6 +24,7 @@ const AttenteListe = ({ user, refrech }) => {
               backgroundColor: "#e6e6ff",
               textAlign: "center",
             },
+            // defaultGroupSort:'asc'
           },
           {
             title: "Pseudo",
@@ -33,6 +34,7 @@ const AttenteListe = ({ user, refrech }) => {
             },
           },
         ]}
+        
         style={{
           width: "750px",
           tableLayout: "fixed",
@@ -45,10 +47,10 @@ const AttenteListe = ({ user, refrech }) => {
             color: "#ffffff",
             textAlign: "center",
             fontWeight: "bold",
-            position: "sticky",
+            position: "sticky" ,
           },
-          maxBodyHeight: "250px",
-          minBodyHeight: "250px",
+          maxBodyHeight: "300px",
+          minBodyHeight: "300px",
           rowStyle: (rowData) => {
             // console.log(rowData)
             if (rowData.notif === 1) {

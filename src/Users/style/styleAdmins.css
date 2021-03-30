@@ -2,10 +2,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: start;
@@ -16,5 +16,6 @@
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  width: 10px;
 }
 /*# sourceMappingURL=styleAdmins.css.map */

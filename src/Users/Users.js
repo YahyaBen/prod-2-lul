@@ -31,7 +31,7 @@ const Users = (A) => {
     refrech(A.match.params.ID);
     var timer = setInterval(() => {
       refrech(A.match.params.ID);
-    }, 500000);
+    }, 5000);
 
     return async () => {
       clearInterval(timer);

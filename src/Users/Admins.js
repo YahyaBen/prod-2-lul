@@ -42,9 +42,9 @@ const Admins = (A) => {
 
   try {
     return (
-      <>
+      <div className="adminGrpContainer">
         {data.user.typeID === 2 ? (
-          <div className="adminGrpContainer">
+          <div>
             {data !== 0 && Users !== 0 ? (
               <>
                 {Users.data.data.map((e) => (
@@ -62,7 +62,7 @@ const Admins = (A) => {
         ) : (
           A.history.push("/Error")
         )}
-      </>
+      </div>
     );
   } catch (error) {
     return <div className="userCatchContainer">Refresh please wait ...</div>;
