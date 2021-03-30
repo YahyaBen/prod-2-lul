@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,kBAAkB,CAAC;EACf,MAAM,EAAE,KAAK;CAAG;;AAEpB,AAAA,eAAe,CAAC;EACZ,OAAO,EAAE,IAAI;CAAG;;AAEpB,AAAA,aAAa,CAAC;EACV,OAAO,EAAE,IAAI;CAAG",
-    "sources": [
-        "styleAdmin.sass"
-    ],
-    "names": [],
-    "file": "styleAdmin.css"
-}

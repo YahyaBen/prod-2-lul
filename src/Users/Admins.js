@@ -4,7 +4,7 @@ import { getUser, getUsers, dechifree } from "../tools/axios";
 import { AdminCard } from "./Admin/AdminCard/AdminCard";
 import AttenteListe from "./Agent/AttenteListe/AttenteListe";
 import PauseListe from "./Agent/PauseListe/PauseListe";
-import "./styleAdmin.css";
+
 
 const Admins = (A) => {
   const [data, setdata] = useState(0);

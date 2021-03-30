@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { demandeP, arreterP } from "../../../tools/axios";
-import "./style.css";
+import "./style/style.css";
 
 const UserCard = ({ user, refrech }) => {
   const [data, setdata] = useState(user);
@@ -67,14 +67,14 @@ const UserCard = ({ user, refrech }) => {
       </div>
       <div>
         {btnDemande === 0 ? (
-          <button className="button" onClick={demandePause}>
+          <button className="demanderPause" onClick={demandePause}>
             Demander la pause
           </button>
         ) : (
           ""
         )}
         {btnFinish === 1 ? (
-          <button className="button" onClick={arreterPause}>
+          <button className="arreterPause" onClick={arreterPause}>
             Arreter la pause
           </button>
         ) : (

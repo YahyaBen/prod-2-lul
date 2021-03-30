@@ -4,6 +4,7 @@ import "./style.css";
 
 const Notifs = ({ user, refrech }) => {
   const [data, setdata] = useState(0);
+  const [disabled, setDisabled] = useState(false);
 
   //////////Gestion affichage button//////////////
   ////////////////////////////////////////////////
@@ -16,10 +17,12 @@ const Notifs = ({ user, refrech }) => {
     //update etat pause =>
     //update datePause
     //notif off
+    setDisabled(true);
     accepterP(user.user.id, user.user.groupID)
       .then((e) => {
         refrech(user.user.id);
       })
+      .then((e) => setDisabled(false))
       .catch((e) => console.log(e));
   };
 
@@ -27,15 +30,18 @@ const Notifs = ({ user, refrech }) => {
     //update ranking
     //update notif
     //update notifdate
+    setDisabled(true);
     depasserP(user.user.id, user.user.groupID)
       .then((e) => {
         refrech(user.user.id);
       })
+      .then((e) => setDisabled(false))
       .catch((e) => console.log(e));
   };
   const patienterPause = () => {
+    setDisabled(true);
     awaitUser(user.user.id).then((e) => {
-      refrech(user.user.id);
+      refrech(user.user.id).then((e) => setDisabled(false));
     });
   };
 
@@ -92,12 +98,18 @@ const Notifs = ({ user, refrech }) => {
       <div className="notifContainer">
         <div className="notifHeader">
           <p>Voulez-vous partir en pause ? {data.Chrono}</p>
-          <button onClick={accepterPause}>Accepter</button>
-          <button onClick={depasserPause}>Depasser</button>
+          <button disabled={disabled} onClick={accepterPause}>
+            Accepter
+          </button>
+          <button disabled={disabled} onClick={depasserPause}>
+            Depasser
+          </button>
 
           {btnPatienter === 0 ? (
             <>
-              <button onClick={patienterPause}>Patienter 2min</button>
+              <button disabled={disabled} onClick={patienterPause}>
+                Patienter 2min
+              </button>
             </>
           ) : (
             ""

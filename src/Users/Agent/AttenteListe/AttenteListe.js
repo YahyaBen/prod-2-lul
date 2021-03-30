@@ -60,6 +60,8 @@ const AttenteListe = ({ user, refrech }) => {
           },
           search: false,
           paging: false,
+          // exportButton: true,
+          // exportAllData: true,
         }}
       />
     </div>

@@ -42,9 +42,9 @@ const Users = (A) => {
       <div className="userContainer">
         {data !== 0 ? (
           <>
-            <UserCard user={data} refrech={refrech} />
-            <AttenteListe user={data} refrech={refrech} />
-            <PauseListe user={data} refrech={refrech} />
+            <UserCard className="itemsUser" user={data} refrech={refrech} />
+            <AttenteListe className="" user={data} refrech={refrech} />
+            <PauseListe className="" user={data} refrech={refrech} />
 
             {/* Notif comp */}
 
