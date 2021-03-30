@@ -34,12 +34,13 @@ const AttenteListe = ({ user, refrech }) => {
             },
           },
         ]}
-        
         style={{
           width: "750px",
           tableLayout: "fixed",
           marginLeft: "auto",
           marginRight: "auto",
+          marginTop: "25px",
+          borderRadius: "20px",
         }}
         options={{
           headerStyle: {
@@ -47,7 +48,7 @@ const AttenteListe = ({ user, refrech }) => {
             color: "#ffffff",
             textAlign: "center",
             fontWeight: "bold",
-            position: "sticky" ,
+            position: "sticky",
           },
           maxBodyHeight: "300px",
           minBodyHeight: "300px",

@@ -79,6 +79,7 @@ const PauseListe = ({ user, refrech }) => {
           marginLeft: "auto",
           marginRight: "auto",
           marginBottom: "50px",
+          marginTop: "25px",
           borderRadius: "20px",
         }}
         options={{
