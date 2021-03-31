@@ -50,8 +50,10 @@ const Admins = (A) => {
                 {Users.data.data.map((e) => (
                   <div className="groupContainer" key={e.group.label}>
                     <AdminCard users={e} data={data} refrech={refrech} />
-                    <AttenteListe user={e.dataGroups} />
-                    <PauseListe user={e.dataGroups} />
+                    <div className="tablesContainer">
+                      <AttenteListe user={e.dataGroups} />
+                      <PauseListe user={e.dataGroups} />
+                    </div>
                   </div>
                 ))}
               </>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import MaterialTable from "material-table";
+import './style/style.css'
 
 const PauseListe = ({ user, refrech }) => {
   const [data, setdata] = useState([]);
@@ -74,12 +75,8 @@ const PauseListe = ({ user, refrech }) => {
           },
         ]}
         style={{
-          width: "750px",
+          width: "100%",
           tableLayout: "fixed",
-          marginLeft: "auto",
-          marginRight: "auto",
-          marginBottom: "50px",
-          marginTop: "25px",
           borderRadius: "20px",
         }}
         options={{
@@ -91,8 +88,8 @@ const PauseListe = ({ user, refrech }) => {
             width: "22px",
             position: "sticky",
           },
-          maxBodyHeight: "250px",
-          minBodyHeight: "250px",
+          maxBodyHeight: "300px",
+          minBodyHeight: "300px",
           rowStyle: (rowData) => {
             if (rowData.etat === 1) {
               if (rowData.diff >= 900) {

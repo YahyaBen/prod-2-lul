@@ -1,9 +1,29 @@
-.flex-container 
-  display: flex
-  flex-direction: row
-  flex-wrap: wrap
-  justify-content: flex-start
-  align-items: center
-  align-content: center
-  width: 10px
+.adminGrpContainer
+  div
+    width: 100%
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    .groupContainer
+      width: 800px
+      margin: auto
+
+      .tablesContainer
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: start
+        justify-items: start
+        align-content: start
+        border: solid 2px black
+        height: fit
+
+        .tableAttente ,.tablePause
+          width: 370px
+      
+        .MuiToolbar-gutters
+          max-height: 60px
+        
+        table
+          min-width: 320px
   

@@ -22,8 +22,6 @@ const Notifs = ({ user, refrech }) => {
       .then((e) => {
         refrech(user.user.id);
       })
-      .then((e) => setDisabled(false))
-      .catch((e) => console.log(e));
   };
 
   const depasserPause = () => {
@@ -35,13 +33,11 @@ const Notifs = ({ user, refrech }) => {
       .then((e) => {
         refrech(user.user.id);
       })
-      .then((e) => setDisabled(false))
-      .catch((e) => console.log(e));
   };
   const patienterPause = () => {
     setDisabled(true);
     awaitUser(user.user.id).then((e) => {
-      refrech(user.user.id).then((e) => setDisabled(false));
+      refrech(user.user.id)
     });
   };
 
@@ -83,6 +79,8 @@ const Notifs = ({ user, refrech }) => {
             });
           } else depasserPause();
         }
+        ///////////////////////
+        ///////////////////////
         //console.log(user.user.diff);
         ///////////////////////
       }, 1000);

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import MaterialTable from "material-table";
-
+import './style/style.css'
 
 const AttenteListe = ({ user, refrech }) => {
   const [dataUser, setdataUser] = useState(user);
@@ -35,11 +35,8 @@ const AttenteListe = ({ user, refrech }) => {
           },
         ]}
         style={{
-          width: "750px",
+          width: "100%",
           tableLayout: "fixed",
-          marginLeft: "auto",
-          marginRight: "auto",
-          marginTop: "25px",
           borderRadius: "20px",
         }}
         options={{

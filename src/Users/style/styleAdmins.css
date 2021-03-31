@@ -1,21 +1,48 @@
-.flex-container {
+.adminGrpContainer div {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  width: 10px;
+}
+
+.adminGrpContainer div .groupContainer {
+  width: 800px;
+  margin: auto;
+}
+
+.adminGrpContainer div .groupContainer .tablesContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  justify-items: start;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  border: solid 2px black;
+  height: fit;
+}
+
+.adminGrpContainer div .groupContainer .tablesContainer .tableAttente, .adminGrpContainer div .groupContainer .tablesContainer .tablePause {
+  width: 370px;
+}
+
+.adminGrpContainer div .groupContainer .tablesContainer .MuiToolbar-gutters {
+  max-height: 60px;
+}
+
+.adminGrpContainer div .groupContainer .tablesContainer table {
+  min-width: 320px;
 }
 /*# sourceMappingURL=styleAdmins.css.map */
