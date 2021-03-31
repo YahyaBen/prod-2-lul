@@ -35,6 +35,11 @@ const AttenteListe = ({ user, refrech }) => {
             },
           },
         ]}
+        localization={{
+          body: {
+            emptyDataSourceMessage: "Aucun agent en attente.",
+          },
+        }}
         style={{
           width: "100%",
           tableLayout: "fixed",

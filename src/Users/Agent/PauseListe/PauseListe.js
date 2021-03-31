@@ -79,6 +79,11 @@ const PauseListe = ({ user, refrech }) => {
           tableLayout: "fixed",
           borderRadius: "20px",
         }}
+        localization={{
+          body: {
+            emptyDataSourceMessage: "Aucun agent en pause.",
+          },
+        }}
         options={{
           headerStyle: {
             backgroundColor: "#154c79",
