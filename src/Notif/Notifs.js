@@ -71,13 +71,16 @@ const Notifs = ({ user, refrech }) => {
         ///////////////////////
         //////DEPPASSER////////
         ///////////////////////
-        if (user.user.diff >= 120) {
+        if (user.user.diff >= 30) {
+          
           if (btnPatienter === 0) {
-            // another verfification awaiting here !!!
-            awaitUser(user.user.id).then((e) => {
-              refrech(user.user.id);
-            });
-          } else depasserPause();
+            depasserPause();
+          //   // another verfification awaiting here !!!
+          //   awaitUser(user.user.id).then((e) => {
+          //     refrech(user.user.id);
+          //   });
+          } 
+          else depasserPause();
         }
         ///////////////////////
         ///////////////////////

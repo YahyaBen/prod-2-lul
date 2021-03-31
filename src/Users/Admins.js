@@ -49,6 +49,7 @@ const Admins = (A) => {
               <>
                 {Users.data.data.map((e) => (
                   <div className="groupContainer" key={e.group.label}>
+                    <h1>{e.group.label}</h1>
                     <AdminCard users={e} data={data} refrech={refrech} />
                     <div className="tablesContainer">
                       <AttenteListe user={e.dataGroups} />

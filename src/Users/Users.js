@@ -41,7 +41,11 @@ const Users = (A) => {
   try {
     return (
       <div className="userContainer">
-        {data !== 0 ? (
+        {/* //////////////////////////// */}
+        {/* //////////////////////////// */}
+        {/* //////////////////////////// */}
+        {/* //////////////////////////// */}
+        {data !== 0 && data.user.typeID === 1 ? (
           <>
             <UserCard className="itemsUser" user={data} refrech={refrech} />
             <AttenteListe className="itemsUser" user={data} refrech={refrech} />

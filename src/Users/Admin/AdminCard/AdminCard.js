@@ -31,8 +31,8 @@ export const AdminCard = ({ data, users, refrech }) => {
 
   return (
     <div className="adminContainer">
-      <button onClick={Reset} style={{ color: "red" }}>
-        Reset Grp {users.group.label}
+      <button onClick={Reset} >
+        Reset
       </button>
       <input
         type="Number"
@@ -41,13 +41,12 @@ export const AdminCard = ({ data, users, refrech }) => {
         placeholder="Insert Pause Max ! "
         min="1"
       ></input>
-      <button onClick={UpdateMax} style={{ color: "red" }}>
-        {" "}
-        Max Grp {users.group.label}
+      <button onClick={UpdateMax} >
+        Max
       </button>
-      <button onClick={isOpen} style={{ color: "red" }}>
+      <button onClick={isOpen} >
         {users.group.isOpen === 1 ? "Fermé " : "Ouvrir "}
-        les pauses du Grp {users.group.label}
+        les pauses
       </button>
     </div>
   );

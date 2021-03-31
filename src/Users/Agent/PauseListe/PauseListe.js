@@ -48,7 +48,7 @@ const PauseListe = ({ user, refrech }) => {
   return (
     <div className="tablePause">
       <MaterialTable
-        title="Liste des Pauses"
+        title="Pauses en cours"
         data={data}
         columns={[
           {

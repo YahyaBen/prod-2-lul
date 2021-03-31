@@ -20,6 +20,7 @@ const AttenteListe = ({ user, refrech }) => {
           {
             title: "Ranking",
             field: "ranking",
+            width: "100px",
             cellStyle: {
               backgroundColor: "#e6e6ff",
               textAlign: "center",

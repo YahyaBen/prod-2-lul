@@ -1,3 +1,22 @@
+.adminGrpContainer button, .adminGrpContainer input {
+  background-color: #154c79;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0 15px;
+  height: 50px;
+}
+
+.adminGrpContainer input {
+  width: 80px;
+  background-color: white;
+  color: #154c79;
+}
+
 .adminGrpContainer div {
   width: 100%;
   display: -webkit-box;
@@ -11,8 +30,16 @@
 }
 
 .adminGrpContainer div .groupContainer {
-  width: 800px;
-  margin: auto;
+  width: 750px;
+  margin-bottom: 45px;
+  background-color: #eee;
+  -webkit-box-shadow: 0 0 5px 15px #eee;
+          box-shadow: 0 0 5px 15px #eee;
+  display: block;
+}
+
+.adminGrpContainer div .groupContainer h1 {
+  text-align: center;
 }
 
 .adminGrpContainer div .groupContainer .tablesContainer {
@@ -30,12 +57,11 @@
   justify-items: start;
   -ms-flex-line-pack: start;
       align-content: start;
-  border: solid 2px black;
   height: fit;
 }
 
 .adminGrpContainer div .groupContainer .tablesContainer .tableAttente, .adminGrpContainer div .groupContainer .tablesContainer .tablePause {
-  width: 370px;
+  width: 335px;
 }
 
 .adminGrpContainer div .groupContainer .tablesContainer .MuiToolbar-gutters {

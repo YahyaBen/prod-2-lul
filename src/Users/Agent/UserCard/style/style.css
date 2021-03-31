@@ -5,12 +5,14 @@
   border-radius: 50% 20% / 10% 40%;
   color: #fff;
   font-size: 15px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .3s;
+  transition: all .3s;
   position: relative;
   overflow: hidden;
   width: 220px;
   z-index: 1;
+  border: none;
+  outline: none;
 }
 
 .demanderPause:after {
@@ -34,8 +36,8 @@
   width: 0%;
   height: 100%;
   background-color: #2075ba;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .3s;
+  transition: all .3s;
   z-index: -1;
 }
 
@@ -54,12 +56,14 @@
   border-radius: 50% 20% / 10% 40%;
   color: #fff;
   font-size: 15px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .3s;
+  transition: all .3s;
   position: relative;
   overflow: hidden;
   width: 220px;
   z-index: 1;
+  border: none;
+  outline: none;
 }
 
 .arreterPause:after {
@@ -83,8 +87,8 @@
   width: 0%;
   height: 100%;
   background-color: #2075ba;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .3s;
+  transition: all .3s;
   z-index: -1;
 }
 
